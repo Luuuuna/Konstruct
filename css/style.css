@@ -255,6 +255,7 @@ p {
 .get-in-touch {
     background-image: url(../img/city.jpeg);
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     padding: 120px 0 231px;
     text-align: center;
