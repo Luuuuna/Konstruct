@@ -113,52 +113,9 @@ p {
 .nav a:nth-child(4) {
     margin-right: 33px;
 }
-.open {
-    display: flex !important;
-    align-items: center;
-}
-.burger {
-    display: none;
-    position: relative;
-    z-index: 50;
-    align-items: center;
-    justify-content: flex-end;
-    width: 30px;
-    height: 18px;
-}
-.burger span {
-    height: 2px;
-    width: 80%;
-    transform: scale(1);
-    background-color: #708090;
-}
-.burger::before,
-.burger::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background-color: #708090;
-    transition: all 0.3s ease 0s;
-}
-.burger::before {
-    top: 0
-}
-.burger::after {
-    bottom: 0
-}
-/* класс active для анимации иконки бургера */
-.burger.active span {
-    transform: scale(0)
-}
-.burger.active::before {
-    top: 50%;
-    transform: rotate(-45deg) translate(0, -50%);
-}
-.burger.active::after {
-    bottom: 50%;
-    transform: rotate(45deg) translate(0, 50%);
-}
+
+
+
 .about {
     padding: 57px 0 118px;
 }

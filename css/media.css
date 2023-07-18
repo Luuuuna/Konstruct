@@ -42,6 +42,9 @@
     .services__grid {
         grid-template-columns: repeat(1, 1fr);
     }
+    .navbar__flex  {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width:730px) {
@@ -51,39 +54,13 @@
     .hewsletter__h3 {
         margin-bottom: 15px;
     }
-}
-
-@media screen and (max-width: 560px) {
-
-    .burger { display: flex }
-
-    .nav{
-        display: none;
+    .nav ul {
         flex-direction: column;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        top: 0; bottom: 0; left: 0; right: 0;
-        z-index: 50;
-        overflow-y: auto;
-        padding: 50px 40px;
-        background-color: #141A20;
-        animation: burgerAnimation 0.4s;
+        align-items: center;
     }
-
-    .nav ul{
-        flex-direction: column;
-        row-gap: 30px;
+    .nav a  {
+        font-size: 18px;
     }
-    .nav a {
-        color: #fff;
-        font-size: 15px;
-    }
-}
-
-@keyframes burgerAnimation {
-    from {opacity: 0}
-    to {opacity: 1}
 }
 @media screen and (max-width: 470px){
  .about__flex-left {
