@@ -1,0 +1,107 @@
+@media screen and (max-width: 995px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .services__h3 {
+        margin-right: 10px;
+    }
+    .footer__flex {
+        flex-wrap: wrap;
+    }
+    .footer__flex-item {
+        margin-bottom: 20px;
+    }
+    
+}
+@media screen and (max-width: 800px){
+    .about__flex {
+        flex-direction: column;
+    }
+    .about__flex-right {
+        max-width: 700px;
+        margin-bottom: 10px;
+        padding-right: 0;
+        text-align: justify;
+        margin-right: 0;
+        
+    }
+    .services__items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services__h3 {
+        margin-right: 0px;
+    }
+    .services__line {
+        margin: 0 auto;
+    }
+    .services__text {
+        margin: 25px auto;
+    }
+    .services__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:730px) {
+    .newsletter__flex {
+        flex-direction: column;
+    }
+    .hewsletter__h3 {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    .burger { display: flex }
+
+    .nav{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: #141A20;
+        animation: burgerAnimation 0.4s;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .nav a {
+        color: #fff;
+        font-size: 15px;
+    }
+}
+
+@keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+@media screen and (max-width: 470px){
+ .about__flex-left {
+    flex-direction: column;
+ }
+ 
+.about__flex-rigth__item:nth-child(2) {
+    margin: 10px auto 10px;
+}
+.about__text-bold {
+    margin-bottom: 30px;
+}
+.hewsletter__h3 {
+    font-size: 20px;
+}
+form#newsletter__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
